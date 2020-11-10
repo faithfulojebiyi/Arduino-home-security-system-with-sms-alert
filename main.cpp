@@ -209,7 +209,7 @@ void alarmTriggered(){
   alarmStatus = 1;
   // alarmActive = 0;
   Serial.println("AT+CMGF=1");\
-  Serial.println("AT+CMGS=\"+2348125700293"\");
+  Serial.println("AT+CMGS=\"+234812"\");
   Serial.println("SYSTEM TRIGGERED");
   lcd.clear();
   lcd.setCursor(0,2);
@@ -218,7 +218,7 @@ void alarmTriggered(){
   if (zone == 1)
   { 
     Serial.println("AT+CMGF=1");\
-    Serial.println("AT+CMGS=\"+2348125700293"\");
+    Serial.println("AT+CMGS=\"+23481"\");
     Serial.println("  Front Door Open  ");
     lcd.print("  Front Door Open  ");
     expected_pos = 65;
@@ -226,7 +226,7 @@ void alarmTriggered(){
   }
    if(zone == 0){
     Serial.println("AT+CMGF=1");\
-    Serial.println("AT+CMGS=\"+2348125700293"\");
+    Serial.println("AT+CMGS=\"+23481"\");
     Serial.print("Motion in Beedroom 1");
     expected_pos = 40;
     lcd.print("Motion in Bedroom 1 ");
@@ -234,7 +234,7 @@ void alarmTriggered(){
   }
   else if(zone == 2){
     Serial.println("AT+CMGF=1");\
-    Serial.println("AT+CMGS=\"+2348125700293"\");
+    Serial.println("AT+CMGS=\"+23481"\");
     Serial.println("Backdoor Open");
     expected_pos = 10;
     lcd.print("Backdoor Open");
@@ -242,7 +242,7 @@ void alarmTriggered(){
   }
    else if(zone == 3){
     Serial.println("AT+CMGF=1");\
-    Serial.println("AT+CMGS=\"+2348125700293"\");
+    Serial.println("AT+CMGS=\"+23481"\");
     Serial.println("Motion in Garage");
     expected_pos = 145;
     lcd.print("Motion in Garage");
